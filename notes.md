@@ -22,6 +22,7 @@ Notes, references and further reading for a talk given remotely for the UAL Crea
 ### Markov chains
 - https://github.com/prehensile/generative-examples/tree/main/markov
 - https://github.com/jsvine/markovify
+- [Infovore » Infinifriends](https://infovore.org/archives/2014/02/10/infinifriends/)
 
 ### char-rnn
 - [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
