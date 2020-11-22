@@ -22,6 +22,7 @@ If you're not already familiar with [virtualenv](https://docs.python-guide.org/d
     cd markov
     virtualenv -p python3 .venv
     ```
+    This creates a new virtual environment in a folder called `.venv` in the `markov` folder.
 * Activate the new virtual environment for use:
     ```
     source .venv/bin/activate
@@ -35,7 +36,7 @@ You'll need to reactivate the virtual environment with the command
 ```
 source .venv/bin/activate
 ```
-whenever you want to use the libraries installed in it.
+(run in the `markov` folder) whenever you want to use the libraries installed in it.
 
 ## Downloading a training corpus 
 This example uses some Raymond Chandler novels downloaded from the web as its source text. In [sources/chandler](sources/chandler), there's a file named [sources.txt](sources/chandler/sources.txt). If you open that in a text editor, you can see that this file contains a list of URLs; these are the source URLs 
@@ -69,7 +70,7 @@ Once you've trained a model, you can generate some text with the following comma
 python3 generate.py chandler.markovify
 ```
 Once you've trained a model, you can generate some text with the following command:
-By default, this will generate 5 sentences. To generate more, you can use the `num-sentences` parameter:
+By default, this will generate 5 sentences. To generate more, you can use the `--num-sentences` parameter:
 ```
 python3 generate.py --num-sentences 10 chandler.markovify
 ``` 
