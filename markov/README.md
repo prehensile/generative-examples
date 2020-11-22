@@ -32,15 +32,15 @@ If you're not already familiar with [virtualenv](https://docs.python-guide.org/d
     ```
 
 You'll need to reactivate the virtual environment with the command
-``
-`source .venv/bin/activate
+```
+source .venv/bin/activate
 ```
 whenever you want to use the libraries installed in it.
 
 ## Downloading a training corpus 
 This example uses some Raymond Chandler novels downloaded from the web as its source text. In [sources/chandler](sources/chandler), there's a file named [sources.txt](sources/chandler/sources.txt). If you open that in a text editor, you can see that this file contains a list of URLs; these are the source URLs 
 
-If you want to create another corpus from a different set of URLs, you can create another folder in [source](sources) and put another `sources.txt` file in there containing those URLs.
+If you want to create another corpus from a different set of URLs, you can create another folder in [sources](sources) and put another `sources.txt` file in there containing those URLs.
 
 If you already have the text files, you can just place them directly in the folder.
 
@@ -58,7 +58,7 @@ Once you've got a training corpus downloaded, you can train a model with the fol
 ```
 python3 train.py sources/chandler chandler.markovify
 ```
-(you'll need to be in the [markov](markov) folder for this; you might need to do `cd..` if you're currently in the `sources` folder)
+(you'll need to be in the `markov` folder for this; you might need to do `cd..` if you're currently in the `sources` folder)
 
 This command trains a model on all of the text files in [sources/chandler](sources/chandler) and saves the resulting model to a file called `chandler.markovify`. If you've got source texts in some other source folders, you can change references to `chandler` for something else to train those other models.
 
