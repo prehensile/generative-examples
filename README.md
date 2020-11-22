@@ -11,4 +11,4 @@ Links and further reading for the talk can be found in [NOTES.md](NOTES.md).
 * Source for [@animalshorrible]() can be found in [animalshorrible.json](animalshorrible.json).
 
 ### Markov chains
-* There's a bunch of code in [markov](markov) for downloading source text, training a Markov model (using the [Markovify library](https://github.com/jsvine/markovify)) and generating text from that model.
+* There's a bunch of Python code in [markov](markov) for downloading source text, training a Markov model (using the [Markovify library](https://github.com/jsvine/markovify)), and generating text from that model.
