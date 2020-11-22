@@ -1,7 +1,8 @@
+# Generative text 
 This repository contains example source files and notes for a (virtual) talk I gave to students at [UAL Creative Computing Institute](https://www.arts.ac.uk/creative-computing-institute) in November 2020.
 
 ## Notes
-Links and further reading for the talk can be found in [notes.md](notes.md).
+Links and further reading for the talk can be found in [NOTES.md](NOTES.md).
 
 ## Code samples
 
