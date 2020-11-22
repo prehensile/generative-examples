@@ -17,10 +17,12 @@ Notes, references and further reading for a talk given remotely for the UAL Crea
 ### Tracery
 - https://tracery.io/
 - https://twitter.com/str_voyage
+- [Cheap Bots, Done Quick!](https://cheapbotsdonequick.com/)
 
 ### Markov chains
 - https://github.com/prehensile/generative-examples/tree/main/markov
 - https://github.com/jsvine/markovify
+- [Infovore » Infinifriends](https://infovore.org/archives/2014/02/10/infinifriends/)
 
 ### char-rnn
 - [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
@@ -30,7 +32,8 @@ Notes, references and further reading for a talk given remotely for the UAL Crea
 ### GPT-2 & 3
 - [OpenAI’s new language AI is available to try yourself - Vox](https://www.vox.com/2019/5/15/18623134/openai-language-ai-gpt2-poetry-try-it)
 - [GPT-2: How to Build "The AI That's Too Dangerous to Release”](https://blog.floydhub.com/gpt2/)
-- https://github.com/nshepperd/gpt-2/tree/finetuning
+- [The Illustrated GPT-2 (Visualizing Transformer Language Models) – Jay Alammar](http://jalammar.github.io/illustrated-gpt2/)
 - [Algonory - shardcore](http://www.shardcore.org/shardpress2019/2019/06/27/algonory/)
 - [Write With Transformer: GPT-2](https://transformer.huggingface.co/doc/gpt2-large)
 - [Janelle Shane - AI Weirdness](https://aiweirdness.com/)
+- https://github.com/nshepperd/gpt-2/tree/finetuning
