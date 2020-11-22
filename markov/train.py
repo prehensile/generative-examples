@@ -11,24 +11,39 @@ parser.add_argument( 'model_file', metavar='MODEL_FILE',
                     help='filename for the trained model')
 args = parser.parse_args()
 
-# stick all the file contents together into one big string
-# this is very inefficient, but probably OK when our corpora are relatively small
+
+## stick all the file contents together into one big string
+## this is very inefficient, but probably OK when our corpora are relatively small
+
+# we'll be holding all text in this string
 all_text = ""
+
+# ignore these files
 ignore_files = [ "sources.txt" ]  
-for fn in os.listdir(  args.source_dir ):
-    
+
+# step through all files in source_dir
+for fn in os.listdir( args.source_dir ):
+
     # skip files we should ignore
     if fn in ignore_files:
         continue
     
-    with open( os.path.join(args.source_dir, fn) ) as fp:
+    # construct a full path to the source text file
+    fn = os.path.join(args.source_dir, fn)
+
+    print( "Read text from {}...".format(fn) )
+    
+    with open(fn) as fp:
         this_text = fp.read()
         all_text += this_text
 
 # build the markov model
+print( "Training model...")
 text_model = markovify.Text( all_text )
+print( "...training done!")
 
 # write it to a file
+print( "Save model file to {}".format(args.model_file    ) )
 with open( args.model_file, "w" ) as fp:
     fp.write( 
         text_model.to_json()
