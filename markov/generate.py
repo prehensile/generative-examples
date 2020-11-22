@@ -23,4 +23,5 @@ for i in range( args.num_sentences ):
         model.make_sentence()
     )
 
+# print the generated text!
 print( " ".join(sentences) )
